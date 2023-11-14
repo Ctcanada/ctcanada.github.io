@@ -178,7 +178,7 @@ CTC
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#about" aria-label="about">
-                            Services
+                            Pricing
                         </a>
                     </li>
                     
@@ -195,7 +195,7 @@ CTC
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#contact"
                             aria-label="contact">
-                            Contact
+                            Contact Us
                         </a>
                     </li>
                     
@@ -223,11 +223,20 @@ CTC
                     Cyril Tax Canada
                 </h2>
                 <h3>
-                    Kyrillos Ayoub
+                    Tax Deadline
                 </h3>
                 <p class="hero-content">
                     
                 </p>
+
+                
+                <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-8fpr" class="countdown-timer" data-style="circles" data-timezone="America/Toronto" data-background="#a81414" data-textcolor="#ffffff" data-date="2023-11-15 23:14" data-digitscolor="#ffbd3e" data-unitscolor="#ffffff">‎</a>
+
+                
+                
+
+
                 <div class="row">
                     <div class="col-auto h-100">
                         
@@ -239,12 +248,6 @@ CTC
     <span class="px-1">
         <a href="https://instagram.com/cyriltaxcanada?igshid=cWl1Ymtjb3RkcXR6&amp;utm_source=qr" target="_blank" class="btn social-icon">
             <img src="instagram.png">
-        </a>
-    </span>
-    
-    <span class="px-1">
-        <a href="https://calendly.com/ctcanada" target="_blank" class="btn social-icon">
-            <img src="facebook.png">
         </a>
     </span>
     
@@ -531,23 +534,23 @@ CTC
 
 <section id="about" class="py-0 py-sm-5">
     <div class="container bg-transparent">
-        <h3 class="text-center bg-transparent">Services</h3>
+        <h3 class="text-center bg-transparent">Pricing</h3>
         <div class="bg-transparent row justify-content-center px-3 py-5">
-            
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="kyroAyoub.png" class="img-thumbnail mx-auto rounded-circle" alt="">
-                </div>
-            </div>
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 
 
                 
-                See the services we offer below
+                We offer personal tax filing for everyone, see our pricing guidelines below
                 <ul>
                     
-                    <li>Personal Income Tax</li>
+                    <li>First Tax Filing</li>
+                    
+                    <li>Students</li>
+                    
+                    <li>Seniors (65+)</li>
+                    
+                    <li>Other Personal Filing</li>
                     
                 </ul>
                 
@@ -560,7 +563,7 @@ CTC
 
 <section id="contact" class="py-5">
     <div class="container">
-        <h3 class="text-center">Get in Touch</h3>
+        <h3 class="text-center">Contact Us</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
@@ -568,10 +571,18 @@ CTC
                         Reach out by email, we are always available
                     </div>
                     
-                    <div class="text-center pt-3">
-                        <a href="mailto:info.ctcanada@gmail.com" class="btn">
-                            info.ctcanada@gmail.com
-                        </a>
+                    <div class="row justify-content-center">
+                        <form id="contact-form" action="https://formspree.io/f/" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                            <div class="form-group pt-3">
+                                <input type="email" class="form-control"  name="email" required="true" placeholder='Enter your email'>
+                            </div>
+                            <div class="form-group pt-3">
+                                <textarea class="form-control" name="message" required="true" placeholder='Enter your message' rows="3"></textarea>
+                            </div>
+                            <div class="form-group text-center pt-3">
+                                <button type="submit" class="btn">info.ctcanada@gmail.com</button>
+                            </div>
+                        </form>
                     </div>
                     
                 </div>
@@ -649,12 +660,15 @@ CTC
 
 
 
+<script src="/js/contact.js"></script>
 
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/ctcanada/consultation" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ctcanada/consultation?background_color=202020&text_color=ffffff&primary_color=ffbd3e', text: 'Book an appointment', color: '#ffbd3e', textColor: '#202020', branding: false }); }</script>
+<!-- Calendly badge widget end -->
 
 
 
