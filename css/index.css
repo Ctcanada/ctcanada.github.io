@@ -103,6 +103,12 @@ header .navbar.animate {
     opacity: 0.5;
 }
 
+#hero h4 {
+    font-size: clamp(20px, 6vw, 40px);
+    color: "#999999";
+    opacity: 0.9;
+}
+
 #hero p {
     margin: 20px 0px 0px;
     max-width: 640px;
